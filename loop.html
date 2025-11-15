@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+<title></title>Document</title>
+</head>
+<body>
+<p>Click thee button to get time based greeting:</p>
+<button onclick="myfunction() ">Try it!</button>
+<p id="hour"></p>
+<p id="greet"></p>
+<script>
+    function myfunction () {
+        var greeting;
+        var time=new Date() . getHours();
+        if (time<10) {
+            greeting="Good morning";}
+            else if (time<20) {
+                greeting= "Good Afternoon";}
+                else{
+                    greeting="good night";
+                }
+                document.getElementById("hour"). innerHTML="Current hour is: " +time;
+                document. getElementById("greet"). innerHTML=greeting;
+            }
+</script>
+</body>
